@@ -71,7 +71,6 @@ inline void FunMove(TaskFunction::Data& dst, TaskFunction::Data& src)
     }
     else
         new ((U*)&dst) U(std::move(*(U*)&src));
-    // new (&dst) U(*(const U*)&src);
 }
 
 template<typename T>
